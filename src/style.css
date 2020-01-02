@@ -184,10 +184,20 @@ body {
 }
 
 .ad-Result {
-  height: 5rem;
+  height: 10rem;
   padding: 1.4rem 1.6rem;
   background: var(--ad-Color-prim);
   box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4);
+}
+.ad-Result-preview {
+  background: white;
+  color: black;
+  align-items: center;
+  display: flex;
+  border-radius: 4px;
+}
+.ad-Result-label {
+  font-weight: 900;
 }
 .ad-Result-textarea {
   height: 100%;
@@ -195,7 +205,6 @@ body {
   resize: none;
   border: none;
   background: none;
-  text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-size: 0.7rem;
   font-weight: bold;
