@@ -1,14 +1,16 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 const Component = React.Component
-const render = ReactDOM.render
+const render = ReactDOM.render;
 
 class Container extends Component {
     state = {
-        w: 800,
-        h: 600,
+        w: 640,
+        h: 640,
         grid: {
             show: true,
             snap: true,
-            size: 50
+            size: 20
         },
         ctrl: false,
         points: [
