@@ -11,3 +11,6 @@ The main goal was to provide a quick way to get a path, without having to open t
 modded by hashrock.
 
 - ported to parcel
+- enable "M" point
+- export to a HTML tag, [bytesize-icons](https://github.com/danklammer/bytesize-icons) style
+- icon preview
