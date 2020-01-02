@@ -18,7 +18,7 @@ class Container extends Component {
     },
     ctrl: false,
     points: [
-      { x: 100, y: 300 },
+      { x: 100, y: 300, m: true },
       { x: 200, y: 300, q: { x: 150, y: 50 } },
       { x: 300, y: 300, q: { x: 250, y: 550 } },
       { x: 400, y: 300, q: { x: 350, y: 50 } },
@@ -30,6 +30,7 @@ class Container extends Component {
           { x: 450, y: 50 }
         ]
       },
+      { x: 300, y: 600, m: true },
       {
         x: 600,
         y: 300,
@@ -138,6 +139,13 @@ class Container extends Component {
           points[active] = {
             x: points[active].x,
             y: points[active].y
+          };
+          break;
+        case "m":
+          points[active] = {
+            x: points[active].x,
+            y: points[active].y,
+            m: true
           };
           break;
         case "q":
@@ -355,7 +363,7 @@ class Container extends Component {
     let d = "";
 
     points.forEach((p, i) => {
-      if (i === 0) {
+      if (i === 0 || p.m) {
         // first point
         d += "M ";
       } else if (p.q) {

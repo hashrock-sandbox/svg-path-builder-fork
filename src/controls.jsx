@@ -218,11 +218,12 @@ export default function Controls(props) {
               {
                 name: "L",
                 value: "l",
-                checked: !active.q && !active.c && !active.a
+                checked: !active.q && !active.c && !active.a && !active.m
               },
               { name: "Q", value: "q", checked: !!active.q },
               { name: "C", value: "c", checked: !!active.c },
-              { name: "A", value: "a", checked: !!active.a }
+              { name: "A", value: "a", checked: !!active.a },
+              { name: "M", value: "m", checked: !!active.m }
             ]}
             onChange={e => props.setPointType(e)}
           />
